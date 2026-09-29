@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+backend/venv/
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.npm/
+
+# Environment files
+.env
+*.env.local
+
+# ML artifacts & datasets
+backend/ml/data/raw/*.csv
+backend/ml/data/raw/*.zip
+backend/ml/data/processed/*.joblib
+backend/ml/data/processed/*.parquet
+!backend/ml/data/raw/.gitkeep
+!backend/ml/data/processed/.gitkeep
+!backend/ml/models/.gitkeep
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
